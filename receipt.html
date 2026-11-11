@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Receipt | Campus Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Campus Bites.</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="order.html">Order</a>
+        </nav>
+    </header>
+
+    <main class="receipt-page">
+
+        <div class="receipt-container" id="receiptContainer">
+
+            <div class="receipt-header">
+                <h1>Campus Bites.</h1>
+                <h2>Payment Receipt</h2>
+
+                <div class="payment-success">
+                    <span>✓</span>
+                    Payment Successful
+                </div>
+
+                <p>Thank you for ordering with us!</p>
+            </div>
+
+            <div class="receipt-details">
+
+                <div class="receipt-row">
+                    <span>Order Number</span>
+                    <strong id="receiptOrderNumber">-</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Student Name</span>
+                    <strong id="receiptStudentName">-</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Student ID</span>
+                    <strong id="receiptStudentID">-</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Phone Number</span>
+                    <strong id="receiptPhone">-</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Order Date</span>
+                    <strong id="receiptDate">-</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Payment Status</span>
+                    <strong class="paid-status">Paid</strong>
+                </div>
+
+            </div>
+
+            <div class="receipt-items-section">
+
+                <h3>Order Items</h3>
+
+                <div id="receiptItems"></div>
+
+            </div>
+
+            <div class="receipt-payment">
+
+                <div class="receipt-row">
+                    <span>Total Amount</span>
+                    <strong id="receiptTotal">₦0</strong>
+                </div>
+
+                <div class="receipt-row">
+                    <span>Amount Paid</span>
+                    <strong id="receiptAmountPaid">₦0</strong>
+                </div>
+
+                <div class="receipt-row change-row">
+                    <span>Change</span>
+                    <strong id="receiptChange">₦0</strong>
+                </div>
+
+            </div>
+
+            <div class="receipt-notes">
+                <strong>Order Notes:</strong>
+                <p id="receiptNotes">No special instructions.</p>
+            </div>
+
+            <div class="receipt-footer">
+                <h3>Thank You!</h3>
+                <p>Present this receipt at the cafeteria counter to collect your order.</p>
+                <p>Good Food. Great Moments.</p>
+            </div>
+
+        </div>
+
+        <div class="receipt-buttons">
+
+            <button onclick="window.print()" class="print-button">
+                Print Receipt
+            </button>
+
+            <a href="index.html" class="home-button">
+                Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Bites. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart | Campus Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Campus Bites.</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="order.html">Order</a>
+            <a href="cart.html">My Cart</a>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+
+        <h1>My Cart</h1>
+        <p class="cart-intro">Review your delicious selections before checkout.</p>
+
+        <div class="cart-layout">
+
+            <section class="cart-items">
+                <div id="cartContainer"></div>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₦0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>₦0</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">₦0</span>
+                </div>
+
+                <button id="checkoutButton" onclick="goToCheckout()">
+                    Proceed to Checkout
+                </button>
+
+                <a href="order.html" class="continue-shopping">
+                    Continue Shopping
+                </a>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Bites. Good Food. Great Moments.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
