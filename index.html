@@ -9,19 +9,25 @@
 
 <body>
 
-  <nav class="navbar">
+<nav class="navbar">
 
     <a href="index.html" class="logo">
         Campus<span>Bites.</span>
     </a>
 
-    <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
         <a href="order.html">Order Food</a>
         <a href="menu.html">Menu</a>
-        <a href="cart.html" class="cart-link">
-            🛒 Cart
-        </a>
+    </div>
+
+    <div class="nav-actions">
+        <a href="cart.html" class="cart-link">🛒 Cart</a>
+
+        <button class="hamburger"
+            onclick="document.getElementById('navLinks').classList.toggle('show')">
+            ☰
+        </button>
     </div>
 
 </nav>
