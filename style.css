@@ -835,5 +835,128 @@ footer {
         max-width: 100%;
         border: none;
     }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #292522;
+    text-decoration: none;
+}
+.logo span {
+    color: #b65e35;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b65e35;
+}
+.cart-link {
+    background: #b65e35;
+    color: white !important;
+    padding: 11px 18px;
+    border-radius: 8px;
+}
+.cart-link:hover {
+    background: #914626;
+}
+
+.hero {
+    min-height: 430px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: #fff4ec;
+    border-radius: 0 0 35px 35px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    color: #292522;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #68605b;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background: #b65e35;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hero button:hover {
+    background: #914626;
+}
+
+.hero img {
+    width: 43%;
+    max-width: 450px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* MOBILE NAVIGATION AND HERO */
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 17px 5%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 240px;
+    }
 }
